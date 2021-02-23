@@ -18,17 +18,27 @@
 
 .main{
   width:960px;
-  height:1400px;
   margin:0 auto;
-  background-color:limegreen;
   display:flex;
   justify-content:center;
+}
+
+.main-right{
+  width:230px;
+  height:1400px;
+  background-color:limegreen;
 }
 
 .main-center{
   width:500px;
   height:1400px;
   background-color:green;
+}
+
+.main-left{
+  width:230px;
+  height:1400px;
+  background-color:limegreen;
 }
 
 .footer{
