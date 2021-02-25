@@ -6,17 +6,16 @@
 
 main{
   width:960px;
-  padding-top:50px;
-  margin:0 auto;
+  margin:50px auto;
 }
 
-.list-section,
-.box-section{
+.list-section{
   padding-bottom:50px;
 }
 
 .list{
-  padding:20px 0 20px 20px;
+  list-style:none;
+  padding:20px;
 }
 
 .list:nth-child(odd){
@@ -36,20 +35,14 @@ main{
   background-color:orange;
 }
 
-.box:nth-child(1),
-.box:nth-child(5),
-.box:nth-child(9){
+.box:nth-child(4n-3){
   background-color:orangered;
 }
 
-.box:nth-child(3),
-.box:nth-child(6),
-.box:nth-child(9){
+.box:nth-child(3n){
   margin-right:0;
 }
 
-.box:nth-child(7),
-.box:nth-child(8),
-.box:nth-child(9){
+.box:nth-last-child(-n+3){
   margin-bottom:0;
 }
