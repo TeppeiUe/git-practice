@@ -41,6 +41,7 @@ main{
   background-color:green;
   display:flex;
   flex-wrap:wrap;
+  justify-content:center;
 }
 
 .main-right div{
