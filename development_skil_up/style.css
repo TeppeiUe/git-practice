@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #ec715f;
+}
+.container {
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+}
+nav {
+  float: right;
+}
+.nav-list-item {
+  color: #fafafa;
+  font-size: 16px;
+  list-style: none;
+  display: inline-block;
+  line-height: 70px;
+  padding: 0 30px;
+}
