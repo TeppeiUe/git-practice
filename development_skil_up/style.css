@@ -28,10 +28,16 @@ nav {
   padding: 0 30px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 .main-visual {
   width: 100%;
   height: 650px;
   background-image: url("img/mv.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   /* 上下中央寄せ */
@@ -40,25 +46,31 @@ nav {
   align-items: center;
 }
 .main-visual-text {
+  font-family: "Raleway", sans-serif;
   color: #fafafa;
   font-size: 64px;
   margin-top: 200px;
 }
 .main-visual-subtext {
+  font-family: "Raleway", sans-serif;
   color: #fafafa;
   font-size: 20px;
   margin-top: 10px;
 }
 
-.portfolio {
+section {
   width: 100%;
-  background-color: #eceff1;
-  padding-top: 90px;
+  padding: 90px 0;
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+.portfolio,
+.profile {
+  background-color: #eceff1;
+}
+
 .heading {
   font-size: 32px;
 }
@@ -107,4 +119,81 @@ nav {
 }
 .portfolio-image-item:nth-child(n + 4) {
   margin-bottom: 0;
+}
+
+.fas {
+  font-size: 60px;
+}
+.box-heading {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.feature-box {
+  width: 980px;
+  display: flex;
+}
+.feature-box-item {
+  width: 320px;
+  height: auto;
+  margin-right: 10px;
+}
+.feature-box-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.profile-box {
+  width: 1024px;
+  display: flex;
+}
+.profile-box-item {
+  width: 512px;
+  text-align: left;
+}
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("img/my-icon.jpg");
+  margin: 0 auto;
+}
+.profile-heading {
+  margin-bottom: 5px;
+}
+.profile-text:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  width: 800px;
+  display: flex;
+}
+.contact-box-item {
+  width: 400px;
+}
+.contact-heading {
+  margin-bottom: 5px;
+}
+.fab {
+  font-size: 50px;
+  margin-right: 20px;
+}
+.fab:nth-child(4) {
+  margin-right: 0;
+}
+.contact-item {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-heading:nth-child(3) {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #ec715f;
+  width: 100%;
+  height: 60px;
+  color: #fafafa;
+  text-align: center;
+  line-height: 60px;
 }
