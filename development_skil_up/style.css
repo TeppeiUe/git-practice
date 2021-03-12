@@ -27,3 +27,84 @@ nav {
   line-height: 70px;
   padding: 0 30px;
 }
+
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url("img/mv.png");
+  display: flex;
+  flex-direction: column;
+  /* 上下中央寄せ */
+  /* justify-content: center; */
+  /* 左右中央寄せ */
+  align-items: center;
+}
+.main-visual-text {
+  color: #fafafa;
+  font-size: 64px;
+  margin-top: 200px;
+}
+.main-visual-subtext {
+  color: #fafafa;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #eceff1;
+  padding-top: 90px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  font-size: 32px;
+}
+.heading-text {
+  margin: 30px 0;
+}
+.heading-after-bar {
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  margin-top: 8px;
+}
+.portfolio-image {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-image-item {
+  width: 300px;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-image-item:nth-child(1) {
+  background-image: url("img/sketch.jpg");
+}
+.portfolio-image-item:nth-child(2) {
+  background-image: url("img/websuku.png");
+}
+.portfolio-image-item:nth-child(3) {
+  background-image: url("img/write.jpg");
+}
+.portfolio-image-item:nth-child(4) {
+  background-image: url("img/webcamp.png");
+}
+.portfolio-image-item:nth-child(5) {
+  background-image: url("img/talk.jpg");
+}
+.portfolio-image-item:nth-child(6) {
+  background-image: url("img/webcamp-mother.png");
+}
+.portfolio-image-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-image-item:nth-child(n + 4) {
+  margin-bottom: 0;
+}
