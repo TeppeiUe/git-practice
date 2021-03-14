@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* header要素 */
 header {
   width: 100%;
   background-color: #ec715f;
@@ -14,6 +15,7 @@ header {
   margin: 0 auto;
 }
 .logo {
+  height: 70px;
   float: left;
 }
 nav {
@@ -27,11 +29,11 @@ nav {
   line-height: 70px;
   padding: 0 30px;
 }
-
-h2 {
-  font-size: 20px;
+.nav-hunger {
+  display: none;
 }
 
+/* main-visual要素 */
 .main-visual {
   width: 100%;
   height: 650px;
@@ -58,9 +60,10 @@ h2 {
   margin-top: 10px;
 }
 
+/* 共通要素 */
 section {
   width: 100%;
-  padding: 90px 0;
+  padding: 90px 10px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -70,12 +73,12 @@ section {
 .profile {
   background-color: #eceff1;
 }
-
 .heading {
   font-size: 32px;
 }
 .heading-text {
-  margin: 30px 0;
+  width: 1024px;
+  padding: 30px 0;
 }
 .heading-after-bar {
   width: 70px;
@@ -83,6 +86,11 @@ section {
   background-color: #ec715f;
   margin-top: 8px;
 }
+h2 {
+  font-size: 20px;
+}
+
+/* portfolio要素 */
 .portfolio-image {
   width: 920px;
   display: flex;
@@ -121,13 +129,7 @@ section {
   margin-bottom: 0;
 }
 
-.fas {
-  font-size: 60px;
-}
-.box-heading {
-  font-size: 20px;
-  margin: 10px 0;
-}
+/* feature要素 */
 .feature-box {
   width: 980px;
   display: flex;
@@ -137,10 +139,20 @@ section {
   height: auto;
   margin-right: 10px;
 }
-.feature-box-item:nth-child(3) {
+.feature-box-item:last-child {
   margin-right: 0;
 }
+.fas {
+  font-size: 60px;
+}
+.feature-box-heading {
+  margin: 10px 0;
+}
+.feature-box-text {
+  text-align: left;
+}
 
+/* profile要素 */
 .profile-box {
   width: 1024px;
   display: flex;
@@ -149,20 +161,21 @@ section {
   width: 512px;
   text-align: left;
 }
-.profile-image {
+.profile-box-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   background-image: url("img/my-icon.jpg");
   margin: 0 auto;
 }
-.profile-heading {
+.profile-box-heading {
   margin-bottom: 5px;
 }
-.profile-text:nth-child(2) {
+.profile-box-text:nth-child(2) {
   margin-bottom: 20px;
 }
 
+/* contact要素 */
 .contact-box {
   width: 800px;
   display: flex;
@@ -170,8 +183,16 @@ section {
 .contact-box-item {
   width: 400px;
 }
-.contact-heading {
+.contact-box-item-position {
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-box-heading {
   margin-bottom: 5px;
+}
+.contact-box-heading:nth-child(3) {
+  margin-top: 20px;
 }
 .fab {
   font-size: 50px;
@@ -180,15 +201,8 @@ section {
 .fab:nth-child(4) {
   margin-right: 0;
 }
-.contact-item {
-  width: 200px;
-  margin: 0 auto;
-  text-align: left;
-}
-.contact-heading:nth-child(3) {
-  margin-top: 20px;
-}
 
+/* footer要素 */
 .footer {
   background-color: #ec715f;
   width: 100%;
@@ -196,4 +210,121 @@ section {
   color: #fafafa;
   text-align: center;
   line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  /* header要素 */
+  .container {
+    width: 90%;
+    height: 50px;
+  }
+  .logo {
+    height: 50px;
+  }
+  nav {
+    display: none;
+  }
+  .nav-hunger {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+    border: 2px solid #fafafa;
+    border-radius: 2px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-hunger div {
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fafafa;
+    margin-bottom: 5px;
+  }
+  .nav-hunger div:last-child {
+    margin-bottom: 0;
+  }
+
+  /* main-visual要素 */
+  .main-visual {
+    background-image: url("img/code.png");
+  }
+  .main-visual-text {
+    font-size: 40px;
+  }
+  .main-visual-subtext {
+    font-size: 18px;
+  }
+
+  /* 共通要素 */
+  .heading-text {
+    width: 90%;
+  }
+  .sp-none {
+    display: none;
+  }
+
+  /* portfolio要素 */
+  .portfolio-image {
+    width: 300px;
+    display: block;
+  }
+  .portfolio-image-item {
+    margin-right: 0;
+  }
+  .portfolio-image-item:nth-child(2n + 1) {
+    display: none;
+  }
+  .portfolio-image-item:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  /* feature要素 */
+  .feature-box {
+    width: 90%;
+    flex-direction: column;
+  }
+  .feature-box-item {
+    width: 90%;
+    margin: 0 auto 10px;
+  }
+  .feature-box-item:last-child {
+    margin: 0 auto;
+  }
+
+  /* profile要素 */
+  .profile-box {
+    width: 90%;
+    flex-direction: column;
+  }
+  .profile-box-item {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .profile-box-heading {
+    margin-top: 20px;
+  }
+
+  /* contact要素 */
+  .contact-box {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-box-item {
+    width: 90%;
+  }
+  .contact-box-item-position {
+    width: 90%;
+    text-align: center;
+  }
+  .contact-box-item:last-child {
+    margin-top: 20px;
+  }
+  .fab {
+    margin-right: 8px;
+  }
 }

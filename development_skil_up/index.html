@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href='style.css'>
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/b0dab96211.js" crossorigin="anonymous"></script>
@@ -11,7 +12,7 @@
   <body>
     <header>
       <div class="container">
-        <img class="logo" src="img/logo.png" alt="logo" height="70">
+        <img class="logo" src="img/logo.png" alt="logo">
         <nav>
           <ul>
             <li class="nav-list-item">Portfolio</li>
@@ -20,6 +21,11 @@
             <li class="nav-list-item">Contact</li>
           </ul>
         </nav>
+        <div class="nav-hunger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </header>
 
@@ -32,10 +38,11 @@
       <section class="portfolio">
         <h1 class="heading">Portfolio</h1>
         <div class="heading-after-bar"></div>
-        <p class="heading-text">It is a long established fact that a reader will be distracted by the readable
+        <p class="heading-text">
+          It is a long established fact that a reader will be distracted by the readable
           <br>
           content of a page when looking at its layout.
-          <br>
+          <br class="sp-none">
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="portfolio-image">
@@ -55,28 +62,28 @@
           It is a long established fact that a reader will be distracted by the readable
           <br>
           content of a page when looking at its layout.
-          <br>
+          <br class="sp-none">
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="feature-box">
           <div class="feature-box-item">
             <i class="fas fa-code"></i>
-            <h2 class="box-heading">Strength1</h2>
-            <p>
+            <h2 class="feature-box-heading">Strength1</h2>
+            <p class="feature-box-text">
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             </p>
           </div>
           <div class="feature-box-item">
             <i class="fas fa-desktop"></i>
-            <h2 class="box-heading">Strength2</h2>
-            <p>
+            <h2 class="feature-box-heading">Strength2</h2>
+            <p class="feature-box-text">
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             </p>
           </div>
           <div class="feature-box-item">
             <i class="fas fa-cogs"></i>
-            <h2 class="box-heading">Strength3</h2>
-            <p>
+            <h2 class="feature-box-heading">Strength3</h2>
+            <p class="feature-box-text">
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             </p>
           </div>
@@ -90,20 +97,20 @@
           It is a long established fact that a reader will be distracted by the readable
           <br>
           content of a page when looking at its layout.
-          <br>
+          <br class="sp-none">
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="profile-box">
           <div class="profile-box-item">
-            <div class="profile-image"></div>
+            <div class="profile-box-image"></div>
           </div>
           <div class="profile-box-item">
-            <h2 class="profile-heading">MyName</h2>
-            <p class="profile-text">
+            <h2 class="profile-box-heading">MyName</h2>
+            <p class="profile-box-text">
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
             </p>
-            <h2 class="profile-heading">MySkills</h2>
-            <p class="profile-text">
+            <h2 class="profile-box-heading">MySkills</h2>
+            <p class="profile-box-text">
               HTML/CSS,JavaScript,JQuery,PhotoShop
             </p>
           </div>
@@ -117,21 +124,21 @@
           It is a long established fact that a reader will be distracted by the readable
           <br>
           content of a page when looking at its layout.
-          <br>
+          <br class="sp-none">
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="contact-box">
           <div class="contact-box-item">
-            <div class="contact-item">
-              <h2 class="contact-heading">Mail</h2>
+            <div class="contact-box-item-position">
+              <h2 class="contact-box-heading">Mail</h2>
               <p>xxx@xxx.com</p>
-              <h2 class="contact-heading">Tel</h2>
+              <h2 class="contact-box-heading">Tel</h2>
               <p>000-0000-0000</p>
             </div>
           </div>
           <div class="contact-box-item">
-            <div class="contact-item">
-              <h2 class="contact-heading">SNS</h2>
+            <div class="contact-box-item-position">
+              <h2 class="contact-box-heading">SNS</h2>
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-instagram"></i>
@@ -142,7 +149,7 @@
     </main>
 
     <footer>
-      <p class="footer">©2017 WebCamp</p>
+      <p class="footer">© 2017 WebCamp</p>
     </footer>
   </body>
 </html>
