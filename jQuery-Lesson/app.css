@@ -1,0 +1,35 @@
+.parent {
+  width: 400px;
+  height: 200px;
+  background-color: #aaa;
+  display: flex;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+}
+.parent div {
+  height: 200px;
+  width: 200px;
+}
+.parent div:first-child {
+  display: none;
+}
+.box1 {
+  background-color: #f00;
+}
+.box2 {
+  background-color: #0f0;
+}
+.box3 {
+  background-color: #00f;
+}
+.box4 {
+  background-color: #ff0;
+}
+
+/* .kadai {
+  width: 200px;
+  height: 200px;
+  display: none;
+  background-color: #f00;
+} */
