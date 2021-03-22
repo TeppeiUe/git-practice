@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box div {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  background-color: #00f;
+}
+
+.box1-add {
+  border: #000 solid 5px;
+}
+
+.box2-add {
+  border: #555 solid 5px;
+}

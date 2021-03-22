@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+thead {
+  background-color: #eee;
+}
+th,
+td {
+  border: #000 solid 1px;
+  padding: 1px;
+}
+
+.transform {
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #f00;
+  transition: all 1s ease;
+}
+
+.translate:hover {
+  transform: translate(20px, 20px);
+  -webkit-transform: translate(20px, 20px);
+  -moz-transform: translate(20px, 20px);
+  -ms-transform: translate(20px, 20px);
+  -o-transform: translate(20px, 20px);
+}
+.translateX:hover {
+  transform: translateX(20px);
+}
+.translateY:hover {
+  transform: translateY(20px);
+}
+.translateZ:hover {
+  transform: perspective(200px) translateZ(20px);
+}
+.rotate:hover {
+  transform: rotate(20deg);
+}
+.rotateX:hover {
+  transform: rotateX(360deg);
+}
+.rotateY:hover {
+  transform: rotateY(360deg);
+}
+.rotateZ:hover {
+  transform: rotateZ(360deg);
+}
+.scale:hover {
+  transform: scale(2, 2);
+}
+.scaleX:hover {
+  transform: scaleX(2);
+}
+.scaleY:hover {
+  transform: scaleY(2);
+}
