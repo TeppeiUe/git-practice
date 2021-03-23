@@ -11,33 +11,43 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="container"><a href="#main-visual">
         <img class="logo" src="img/logo.png" alt="logo">
+      </a>
         <nav>
           <ul>
-            <li class="nav-list-item">Portfolio</li>
-            <li class="nav-list-item">Feature</li>
-            <li class="nav-list-item">Profile</li>
-            <li class="nav-list-item">Contact</li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="nav-hunger">
-          <div></div>
-          <div></div>
-          <div></div>
+        <!-- レスポンシブ対応ハンバーガーアイコン -->
+        <div class="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="main-visual">
+      <div id="main-visual">
+        <!-- レスポンシブ対応ハンバーガーメニュー -->
+        <div id="sp-menu">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
         <div class="main-visual-text">Lorem Ipsum</div>
         <div class="main-visual-subtext">simply dummy text of the printing</div>
       </div>
 
-      <section class="portfolio">
+      <section id="portfolio">
         <h1 class="heading">Portfolio</h1>
-        <div class="heading-after-bar"></div>
         <p class="heading-text">
           It is a long established fact that a reader will be distracted by the readable
           <br>
@@ -55,9 +65,8 @@
         </div>
       </section>
 
-      <section class="feature">
+      <section id="feature">
         <h1 class="heading">Feature</h1>
-        <div class="heading-after-bar"></div>
         <p class="heading-text">
           It is a long established fact that a reader will be distracted by the readable
           <br>
@@ -90,9 +99,8 @@
         </div>
       </section>
 
-      <section class="profile">
+      <section id="profile">
         <h1 class="heading">Profile</h1>
-        <div class="heading-after-bar"></div>
         <p class="heading-text">
           It is a long established fact that a reader will be distracted by the readable
           <br>
@@ -117,9 +125,8 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact">
         <h1 class="heading">Contact</h1>
-        <div class="heading-after-bar"></div>
         <p class="heading-text">
           It is a long established fact that a reader will be distracted by the readable
           <br>
@@ -146,6 +153,8 @@
           </div>
         </div>
       </section>
+      <script src="jquery.min.js"></script>
+      <script src="script.js"></script>
     </main>
 
     <footer>
