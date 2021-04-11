@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-bar: #ec715f;
+$color-text: #fafafa;
+
+/* header要素 */
+header {
+  width: 100%;
+  background-color: $color-bar;
+}
+.container {
+  width: 1024px;
+  height: 70px;
+  margin: 0 auto;
+  &__logo {
+    height: 70px;
+    float: left;
+  }
+  &__nav{
+    float: right;
+  }
+}
+.nav-list{
+  list-style: none;
+  display: inline-block;
+  line-height: 70px;
+  padding: 0 30px;
+  &__anchor {
+    color: $color-text;
+    font-size: 16px;
+  }
+}
+.nav-hamburger {
+  display: none;
+}
+
+/* main-visual要素 */
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background: {
+    image: url("img/mv.png");
+    size: cover;
+    position: center;
+  };
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  %text-content {
+    font-family: "Raleway", sans-serif;
+    color: $color-text;
+  }
+  &__text {
+    @extend %text-content;
+    font-size: 64px;
+    margin-top: 200px;
+    font-weight: bold;
+  }
+  &__subtext {
+    @extend %text-content;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+#sp-menu {
+  display: none;
+}
+
+/* 共通要素 */
+.section {
+  width: 100%;
+  padding: 90px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__heading{
+    font-size:32px;
+    &::after{
+      content: "";
+      width: 70px;
+      height: 3px;
+      background-color: $color-bar;
+      margin: 8px auto 0;
+      display: block;
+    }
+  }
+  &__heading-text{
+    width: 1024px;
+    padding: 30px 0;
+  }
+}
+#portfolio,
+#profile {
+  background-color: #eceff1;
+}
+h2 {
+  font-size: 20px;
+}
+
+/* portfolio要素 */
+.portfolio-image {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    width: 300px;
+    height: 250px;
+    margin: {
+      right: 10px;
+      bottom: 10px;
+    };
+    background: {
+      size: cover;
+      position: center;
+    };
+    &:nth-child(1) {
+      background-image:url("img/sketch.jpg");
+    }
+    &:nth-child(2) {
+      background-image:url("img/websuku.png");
+    }
+    &:nth-child(3) {
+      background-image:url("img/write.jpg");
+    }
+    &:nth-child(4) {
+      background-image:url("img/webcamp.png");
+    }
+    &:nth-child(5) {
+      background-image:url("img/talk.jpg");
+    }
+    &:nth-child(6) {
+      background-image:url("img/webcamp-mother.png");
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* feature要素 */
+.feature-box {
+  width: 980px;
+  display: flex;
+  &__item {
+    width: 320px;
+    height: auto;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__heading{
+    margin: 10px 0;
+  }
+  &__text{
+    text-align: left;
+  }
+  .fas {
+    font-size: 60px;
+  }
+}
+
+/* profile要素 */
+.profile-box {
+  width: 1024px;
+  display: flex;
+  &__item {
+    width: 512px;
+    text-align: left;
+  }
+  &__image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    @include back-img("my-icon.jpg");
+    margin: 0 auto;
+  }
+  &__heading {
+    margin-bottom: 5px;
+  }
+  &__text:last-child{
+    margin-bottom:20px;
+  }
+}
+
+/* contact要素 */
+.contact-box {
+  width: 800px;
+  display: flex;
+  &__item {
+    width: 400px;
+  }
+  &__item-position {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  &__heading {
+    margin-bottom: 5px;
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+  }
+  .fab {
+    font-size: 50px;
+    margin-right: 20px;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+}
+
+/* footer要素 */
+.footer {
+  background-color: $color-bar;
+  width: 100%;
+  height: 60px;
+  color: $color-text;
+  text-align: center;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  /* header要素 */
+  .container {
+    width: 90%;
+    height: 50px;
+    &__logo {
+      height: 50px;
+    }
+    &__nav{
+      display:none;
+    }
+  }
+  .nav-hamburger {
+    width: 40px;
+    height: 32px;
+    margin: 9px 5%;
+    border: none;
+    display: inline-block;
+    float: right;
+    position: relative;
+    &__bar {
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: $color-text;
+      display: inline-block;
+      position: absolute;
+      &:nth-child(1){
+        top:0;
+      }
+      &:nth-child(2) {
+        top:14px;
+      }
+      &:nth-child(3) {
+        top:28px;
+      }
+    }
+  }
+  .active.nav-hamburger {
+    span {
+      &:nth-child(1){
+        transform: translateY(14px) rotate(-45deg);
+      }
+      &:nth-child(2){
+        opacity:0;
+      }
+      &:nth-child(3){
+        transform: translateY(-14px) rotate(45deg);
+      }
+    }
+  }
+
+  /* main-visual要素 */
+  .main-visual {
+    background-image: url("img/code.png");
+    &__text{
+      font-size:40px;
+    }
+    &__subtext{
+      font-size:18px;
+    }
+  }
+
+  /* ハンバーガーメニュー */
+  #sp-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+  }
+  .menu-list {
+    text-align: center;
+    margin-bottom: 5px;
+    &__anchor{
+      color:#fff;
+    }
+  }
+
+  /* 共通要素 */
+  .section__heading-text {
+    width: 90%;
+  }
+  .sp-none {
+    display: none;
+  }
+
+  /* portfolio要素 */
+  .portfolio-image {
+    width: 300px;
+    display: block;
+    &__item {
+      margin-right: 0;
+      &:nth-child(2n + 1) {
+        display: none;
+      }
+      &:nth-child(4) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  /* feature要素 */
+  .feature-box {
+    width: 90%;
+    flex-direction: column;
+    &__item {
+      width: 90%;
+      margin: 0 auto 10px;
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /* profile要素 */
+  .profile-box {
+    width: 90%;
+    flex-direction: column;
+    &__item {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__heading {
+      margin-top: 20px;
+    }
+  }
+
+  /* contact要素 */
+  .contact-box {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    &__item {
+      width: 90%;
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+    &__item-position {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  .fab {
+    margin-right: 8px;
+  }
+}
